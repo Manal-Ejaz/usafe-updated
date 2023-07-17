@@ -1,0 +1,83 @@
+.guidLogoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: black;
+    width: 100%;
+    padding-top: 86px;
+}
+.guidLogo{
+    height: 150px;
+}
+.guidContent{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    flex-direction: column;
+}
+.guidBorder{
+    border: 1px solid goldenrod;
+    width: 100%;
+}
+.guidPara,.guidBullets,.guidSubBullets{
+    font-size: 24px;
+}
+.guidBullets,.guidSubBullets{
+    margin: 0%;
+    margin-left: 20px;
+    
+}
+.guidSubBullets{
+    margin-left: 10%;
+}
+
+.guidFooter{
+    background-color: black;
+    display: flex;
+    margin-top: 30px;
+    padding: 25px;
+}
+.guidFooterText{
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  .guidNav {
+    background-color: goldenrod;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    width: 99%;
+    margin-bottom: 20px;
+  }
+  
+  .guidNav p {
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    color: white;
+}
+.guidCross{
+    color: white;
+}
+
+@media (max-width: 400px) {
+    .guidPara,.guidBullets,.guidSubBullets,.guidFooterText{
+        font-size: 15px;
+    }
+    .guidFooterText{
+        font-size: 10px;
+    }
+  }
+  @media (max-width: 470px) {
+    
+    .guidNav {
+        width: 97%;
+      }
+}

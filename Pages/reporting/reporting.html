@@ -10,13 +10,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b576bd8d3c.js" crossorigin="anonymous"></script>
     
-    <link rel="stylesheet" href="../reportDeatails/reportDetails.css" >
-    <link rel="stylesheet" href="../../Components/dropDownComp/dropDown.css" >
-    <link rel="stylesheet" href="../../Components/reports/reports.css" >
-    <link rel="stylesheet" href="../../Pages/reporting/reporting.css" >
-    <link rel="stylesheet" href="../../Components/reportCount/reportCount.css" >
-    <link rel="stylesheet" href="../../Components/floatBtn/floatBtn.css" >
-    <link rel="stylesheet" href="../../Components/taskBar/taskBar.css" >
+    <link rel="stylesheet" href="../../assets/css/reportDetails.css" >
+    <link rel="stylesheet" href="../../assets/css/reports.css" >
+    <link rel="stylesheet" href="../../assets/css/reporting.css" >
+    <link rel="stylesheet" href="../../assets/css/reportCount.css" >
+    <link rel="stylesheet" href="../../assets/css/floatBtn.css" >
+    <link rel="stylesheet" href="../../assets/css/taskBar.css" >
+    <link rel="stylesheet" href="../../assets/css/reportCount.css" >
 </head>
 <body>
     <div class='RepHeader'>My Reportings</div>
@@ -25,7 +25,7 @@
 
         <div class='ReportCountContainerSecond'>
           <p class='ReportCountContentSecond'>Total Submitted Report(s)</p>
-          <p class='ReportCountContentSecond'>292</p>
+          <p id="PendingReports" name="PendingReports" class='ReportCountContentSecond'>292</p>
       </div>
 
         <div class='RepContentContainer'>
@@ -48,9 +48,15 @@
         <div class="floatBtn"></div>
         <div class="taskBar"></div>
     </div>
-    <script src="../../Components/reports/index.js"></script>
-    <script src="../../Components/floatBtn/index.js"></script>
+    <script src="../../Components/reports/reports.js"></script>
+    <script src="../../Components/floatBtn/floatBtn.js"></script>
     <script src="../../Components//reportCount/index.js"></script>
-    <script src="../../Components/taskBar/index.js"></script>
+    <script src="../../Components/taskBar/taskBar.js"></script>
+    <script src="../../Components/reportCount/reportCount.js"></script>
 </body>
+<script>
+  function navigateToPage(url) {
+    location.href = url;
+  }
+</script>
 </html>

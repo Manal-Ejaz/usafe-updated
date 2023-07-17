@@ -22,7 +22,7 @@ body{
     flex-direction: column;
     width: 100%;
     margin-bottom: 100px;
-    margin-top: 210px;
+    margin-top: 235px;
 }
 .reporting{
     background-color: lightgray;
@@ -34,11 +34,11 @@ body{
     background-color: white;
     position: fixed;
     width: 100%;
-    top:128px;
+    top: 134px;
 }
 .ReportCountContentSecond{
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 30px;
     margin: 15px;
     padding-left: 10px;
     padding-right: 10px;
@@ -55,5 +55,11 @@ body{
     }
     .ReportCountContainerSecond{
         top:94px;
+    }
+}
+@media (max-width: 470px) {
+    
+    .ReportCountContainerSecond{
+        top:112px;
     }
 }

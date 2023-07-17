@@ -10,12 +10,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b576bd8d3c.js" crossorigin="anonymous"></script>
     
-    <link rel="stylesheet" href="../reportDeatails/reportDetails.css" >
-    <link rel="stylesheet" href="../../Components/dropDownComp/dropDown.css" >
-    <link rel="stylesheet" href="../../Components/dateTime/dateTime.css" >
+    <link rel="stylesheet" href="../../assets/css/reportDetails.css" >
+    <link rel="stylesheet" href="../../assets/css/dropDown.css" >
+    <!-- <link rel="stylesheet" href="../../assets/css/taskDetails.css" > -->
 </head>
 <body>
-    <nav class='forgetNav'><i class="fa fa-arrow-left" aria-hidden="true"></i> <p>Report Details</p></nav>
+    <nav class='reportDetailNav'><a class="reportDetailBack" onclick="navigateToPage('../reporting/reporting.html')"><i class="fa fa-arrow-left" aria-hidden="true"></i> </a><p>Report Details</p></nav>
     <div class='RepDetailsContainer'>
         <div class='RepDetailsContent'>
             <div class="dropDown"></div>
@@ -30,31 +30,38 @@
 
 
             <div class='reportDetailContainer'>
-                <p class='reportDetailContent'>Date</p>
-                <h2>2018-05-11</h2>
-                <i class="fa fa-calendar-minus-o" aria-hidden="true"></i>
-              </div>
+          
+              <p class='reportDetailContent'>Date</p>
+              <input class="taskDate" type="date" id="targetDate" name="targetDate">
+            </div>
+  
+            <div class='reportDetailContainer'>
+              <p class='reportDetailContent'>Time</p>
+              <input class="taskDate" type="time" id="targetTime" name="targetTime">
+            </div>
+  
+        </div>
 
-              <div class='reportDetailContainer'>
-                <p class='reportDetailContent'>Time</p>
-                <h2>18:37:27</h2>
-                <i class="fa fa-clock-o" aria-hidden="true"></i>
-              </div>
 
 
+          
 
-          </div>
           <div class='RepPhoto'>
             <label>Photos</label>
-            <img src="../../assets/usafeLogo.png"/>
+            <img id="RepPhoto" name="RepPhoto" src="../../assets/usafeLogo.png"/>
 
           </div>
           <div class="dropDown"></div>
+        </div>
           
         </div>
       </div>
-      <script src="../../Components/dropDownComp/index.js"></script>
-      <script src="../../Components/dateTime/index.js"></script>
+      <script src="../../Components/dropDownComp/dropDown.js"></script>
     
 </body>
+<script>
+  function navigateToPage(url) {
+    location.href = url;
+  }
+</script>
 </html>

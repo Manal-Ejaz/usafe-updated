@@ -10,10 +10,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b576bd8d3c.js" crossorigin="anonymous"></script>
     
-    <link rel="stylesheet" href="../forget/forget.css" >
+    <link rel="stylesheet" href="../../assets/css/forget.css" >
 </head>
 <body>
-    <nav class='forgetNav'><i class="fa fa-arrow-left" aria-hidden="true"></i> <p>Forget Password</p></nav>
+    <nav class='forgetNav'><a class="forgetBack" onclick="navigateToPage('../loginPage/loginPage.html')"><i class="fa fa-arrow-left" aria-hidden="true"></i></a> <p>Forget Password</p></nav>
         <form class="formLogin">
             <div class="logo">
                 <img src="../../assets/usafeLogo.png" alt="logo" />
@@ -21,9 +21,8 @@
             <p class='forgetInst'>Enter your email address below to reset password. A password will be emailed to you.</p>
 
             <div class="input-container">
-                <!-- <BsFillPersonFill className="loginIcon" /> -->
                 <i class="fa fa-user loginIcon" aria-hidden="true"></i>
-                <input placeholder="Email" class="input-field" type="text" />
+                <input id="forgetEmail" name="forgetEmail" placeholder="Email" class="input-field" type="text" />
                 <label for="input-field" class="input-label">
                     Email
                 </label>
@@ -32,4 +31,9 @@
             <button class="btnLogin">Reset Password</button>
         </form>
 </body>
+<script>
+    function navigateToPage(url) {
+      location.href = url;
+    }
+  </script>
 </html>

@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b576bd8d3c.js" crossorigin="anonymous"></script>
     
-    <link rel="stylesheet" href="../loginPage/loginPage.css" >
+    <link rel="stylesheet" href="../../assets/css/loginPage.css" >
 </head>
 <body>
     <form class="formLogin">
@@ -19,9 +19,8 @@
         </div>
 
         <div class="input-container">
-            <!-- <BsFillPersonFill class="loginIcon" /> -->
             <i class="fa fa-user loginIcon" aria-hidden="true"></i>
-            <input placeholder="Email" class="input-field" type="text" />
+            <input id="email" name="email" placeholder="Email" class="input-field" type="text" />
             <label for="input-field" class="input-label">
                 Email
             </label>
@@ -29,21 +28,25 @@
         </div>
 
         <div class="input-container">
-            <!-- <AiOutlineLock class="loginIcon" /> -->
             <i class="fa fa-lock loginIcon" aria-hidden="true"></i>
             <i class="fa fa-eye passCheck" aria-hidden="true"></i>
-            <input placeholder="Password" class="input-field" type="text" />
+            <input id="password" name="password" placeholder="Password" class="input-field" type="password" />
             <label for="input-field" class="input-label">
                 Password
             </label>
             <span class="input-highlight"></span>
         </div>
 
-        <a class="loginLink">
+        <a onclick="navigateToPage('../forget/forget.html')" class="loginLink">
             Forget Password?
         </a>
 
-        <button class="btnLogin">login</button>
+        <a onclick="navigateToPage('../reporting/reporting.html')" class="btnLogin">login</a>
     </form> 
 </body>
+<script>
+    function navigateToPage(url) {
+      location.href = url;
+    }
+  </script>
 </html>

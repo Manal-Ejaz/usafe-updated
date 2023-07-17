@@ -10,13 +10,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b576bd8d3c.js" crossorigin="anonymous"></script>
     
-    <link rel="stylesheet" href="../tasks/tasks.css" >
+    <link rel="stylesheet" href="../../assets/css/forget.css" >
+    <link rel="stylesheet" href="../../assets/css/doPage.css" >
 </head>
 <body>
-    <div class="tasks"></div>
+    <nav class='doPageNav'><p>Do's and Dont's</p><a onclick="navigateToPage('../taskDetails/taskDetails.html')"><i class="fa fa-times DoCross" aria-hidden="true"></i></a></nav>
     
-   
-    <script src="../tasks/index.js"></script>
-    
+    <img class="safetyImg" src="../../assets/usafeLogo.png"/>
+
 </body>
+<script>
+    function navigateToPage(url) {
+      location.href = url;
+    }
+  </script>
 </html>

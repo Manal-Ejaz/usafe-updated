@@ -2,22 +2,13 @@ body{
     padding: 0%;
     margin: 0%;
 }
-.TaskHeadings{
-    width: 40%;
-    margin-left: 4%;
-}
-.TaskBtn{
-    display: flex;
-}
-
-.TaskContainer {
+.ReportContainer {
     background: white;
     display: flex;
     flex-direction: column;
     border: 2px solid lightgray;
     border-top:1px solid lightgray;
     height: 222px;
-    margin-top: 10px;
 }
 
 .ReportContent{
@@ -53,10 +44,11 @@ body{
     border: none;
     background-color: white;
     padding: 15px;
-    margin:5px;
-    width: 98%;
+    margin: 5px;
     margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

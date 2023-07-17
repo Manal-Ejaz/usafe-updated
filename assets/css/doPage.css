@@ -1,0 +1,36 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.doPageNav {
+    background-color: goldenrod;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    width: 99%;
+  }
+  
+  .doPageNav p {
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    color: white;
+}
+.DoCross{
+    color: white;
+}
+.safetyImg{
+    width: 100%;
+    height: 627px;
+    margin-top: 82px;
+}
+
+@media (max-width: 470px) {
+    
+    .doPageNav {
+        width: 97%;
+      }
+}

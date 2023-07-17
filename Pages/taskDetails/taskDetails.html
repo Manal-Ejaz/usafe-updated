@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b576bd8d3c.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="../../assets/css/taskDetails.css" >
+    <link rel="stylesheet" href="../../assets/css/dropDown.css" >
+    <link rel="stylesheet" href="../../assets/css/reportDetails.css" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class='taskDetailNav'><a class="taskDetailsBack" onclick="navigateToPage('../taskPage/taskPage.html')"><i class="fa fa-arrow-left" aria-hidden="true"></i></a> <p>Safety Action Meeting (SAM)</p></nav>
+    
+
+    <div class="taskDetailContainer">
+      
+      <div class="dropDown"></div>
+      <div class="dropDown"></div>
+
+      <div class='DateTimeContainer'> 
+
+
+        <div class='reportDetailContainer'>
+          
+            <p class='reportDetailContent'>Date</p>
+            <input class="taskDate" type="date" id="targetDate" name="targetDate">
+          </div>
+
+          <div class='reportDetailContainer'>
+            <p class='reportDetailContent'>Time</p>
+            <input class="taskDate" type="time" id="targetTime" name="targetTime">
+          </div>
+
+      </div>
+
+      <div class='DetailTextArea'>
+        <label class='TextDescription'>Leader</label>
+        <textarea id="leader" name="leader" class='RepText1' placeholder="AM 3"></textarea>
+      </div>
+
+      <div class='DetailTextArea'>
+        <label class='TextDescription'>Enter the Name of Participants</label>
+        <textarea id="Participants" name="Participants" class='RepText' placeholder="test Participants"></textarea>
+      </div>
+
+      <div class='DetailTextArea'>
+        <label class='TextDescription'>Topic</label>
+        <textarea id="Topic" name="Topic" class='RepText1' placeholder="topic test"></textarea>
+      </div>
+
+      <div class='DetailTextArea'>
+        <label class='TextDescription'>Outline of facts</label>
+        <textarea id="facts" name="facts" class='RepText' placeholder="test test"></textarea>
+      </div>
+
+
+
+      <!-- Trigger Modal -->
+      <a type="button" class="btn btn-primary VoteMTrigger" data-toggle="modal" data-target="#VoteModal">
+      
+      <div class="VoteContainer">
+
+        <div class="upperBorder">
+          <p class="Sno">Sno.</p>
+          <p class="Acc">Acc/Rec</p>
+
+        </div>
+        <div class="ideaContainer">
+          <p class="Sno">1</p>
+          <p class="ideaText">this is idea or action description</p>
+        </div>
+        <div class="ideaContainer">
+          <p class="Sno">Votes</p>
+          <i class="fa fa-thumbs-up ideaSymbol" aria-hidden="true"></i>
+          <p>1</p>
+          <i class="fa fa-thumbs-down ideaSymbol" aria-hidden="true"></i>
+          <p>1</p>
+        </div>
+      </a>
+
+        <div class="taskEndBtnsContainer">
+          <a class="taskEndBtn" onclick="navigateToPage('../doPage/doPage.html')">
+            Do's and Don't
+          </a>
+          <a class="taskEndBtn"  onclick="navigateToPage('../guidlines/guidlines.html')">
+            Guidlines
+          </a>
+
+        </div>
+
+      </div>
+   
+
+
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="VoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="taskMHeading">Actions and Recomendations</p>
+            <textarea id="Actions" name="Actions" class="taskDetailMText" placeholder="this is idea or action description"></textarea>
+
+            <p class="taskMHeading">Raised By</p>
+            <textarea id="RaisedBy" name="RaisedBy" class="taskDetailMText2" placeholder="this is idea or action description"></textarea>
+
+            <p class="taskMHeading">Responsible</p>
+            <textarea id="Responsible" name="Responsible" class="taskDetailMText2" placeholder="this is idea or action description"></textarea>
+
+            <p class="taskMHeading">Target Date</p>
+            <input class="targetDate" type="date" id="targetDate" name="targetDate">
+
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="../../Components/dropDownComp/dropDown.js"></script>
+
+</body>
+<script>
+  function navigateToPage(url) {
+    location.href = url;
+  }
+</script>
+</html>

@@ -1,8 +1,35 @@
 body{
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
-.input-container {
+.forgetNav {
+    background-color: goldenrod;
+    padding: 10px;
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .forgetNav p {
+    font-weight: bold;
+  }
+  
+  .arrow {
+    margin-right: 15px;
+  }
+  
+  .forgetInst {
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .formLogin {
+    width: 88%;
+    margin: auto;
+  }
+  
+  .input-container {
     position: relative;
     margin: 20px;
   }
@@ -48,6 +75,17 @@ body{
     width: 100%;
   }
   
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loginIcon {
+    position: absolute;
+    top: 10px;
+  }
+  
   .btnLogin {
     width: 98%;
     padding: 12px 0px;
@@ -57,40 +95,13 @@ body{
     border-radius: 5px;
     margin: 25px auto auto auto;
   }
-  
-  .loginLink {
-    color: black;
-    float: right;
-    margin-right: 33px;
-  }
-  
-  .loginIcon {
-    position: absolute;
-    top: 10px;
-  }
-  
-  .formLogin {
-    width: 88%;
-    margin: auto;
-  }
-  
-  .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .passCheck {
-    position: absolute;
-    right: 15px;
-    top: 10px;
-  }
 
-  @media (max-width: 660px) {
-    .passCheck {
-        right: 0;
-      }
-      .loginLink {
-        margin-right: 0px;
-      }
-    
+  .forgetBack :active {
+    background-color: lightgray;
+    border: 1px solid transparent;
+    border-radius: 35px;
+}
+
+.forgetBack {
+  margin: 10px;
 }

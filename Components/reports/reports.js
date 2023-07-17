@@ -24,7 +24,7 @@ const reports = () => {
 
       </div>
       <div class='ReportBorder'/>
-      <button class='ReportButton'}>VIEW DETAILS</button>
+      <a onclick="navigateToPage('../../Pages/reportDetails/reportDetails.html')" class='ReportButton'}>VIEW DETAILS</button>
 
     </div>
   `
